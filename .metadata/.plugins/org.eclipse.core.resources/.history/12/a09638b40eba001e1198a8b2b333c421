@@ -1,0 +1,19 @@
+package com.userService.feignClient;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+
+import com.userService.model.Hotel;
+
+@Service
+@FeignClient(value="$(spring.application.name)")
+public interface HotelService {
+	
+	@GetMapping("/hotel/{hotel_id}")
+	Hotel getHotel(@PathVariable("hotel_id") String hotel_id);
+		
+	
+
+}

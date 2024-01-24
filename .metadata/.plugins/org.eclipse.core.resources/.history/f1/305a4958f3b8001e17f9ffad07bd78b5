@@ -1,0 +1,30 @@
+package com.hoteService.serviceImpl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.hoteService.model.Hotel;
+import com.hoteService.repo.HotelRepo;
+import com.hoteService.service.HotelService;
+
+@Service
+public class HotelServiceImpl implements HotelService {
+	
+	@Autowired
+	HotelRepo hotelRepo;
+
+	@Override
+	public Hotel create(Hotel hotel) {
+		Hotel save = hotelRepo.save(hotel);
+		return save;
+	}
+
+	@Override
+	public Hotel getAll() {
+		List<Hotel> all = hotelRepo.findAll();
+		return all;
+	}
+
+}

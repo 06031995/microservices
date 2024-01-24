@@ -1,0 +1,5 @@
+package com.hoteService.model;
+
+public class Hotel {
+
+}

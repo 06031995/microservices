@@ -1,0 +1,5 @@
+package com.userService.feignClient;
+
+public interface HotelService {
+
+}

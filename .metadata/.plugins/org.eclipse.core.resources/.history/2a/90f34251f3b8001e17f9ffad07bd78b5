@@ -1,0 +1,14 @@
+package com.hoteService.service;
+
+import com.hoteService.model.Hotel;
+
+public interface HotelService {
+	
+
+	public Hotel create(Hotel hotel);
+	
+	Hotel getAll();
+		
+		
+
+}

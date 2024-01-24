@@ -1,0 +1,5 @@
+package com.ratingService.controller;
+
+public class RatingController {
+
+}

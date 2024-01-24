@@ -1,0 +1,12 @@
+package com.userService.service;
+
+import com.userService.model.User;
+
+public interface UserService {
+	
+	User saveUser();
+	
+	User getAllUser();
+	
+
+}

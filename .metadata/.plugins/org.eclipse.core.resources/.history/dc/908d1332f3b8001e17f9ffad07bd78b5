@@ -1,0 +1,5 @@
+package com.hoteService.serviceImpl;
+
+public class HotelServiceImpl {
+
+}

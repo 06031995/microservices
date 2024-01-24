@@ -1,0 +1,5 @@
+package com.hoteService.repo;
+
+public interface HotelRepo {
+
+}
